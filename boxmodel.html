@@ -7,14 +7,14 @@
   <title>Box Model</title>
   <style>
     body,html{
-      padding: 0;
+      padding: 0; /*  boarder 안*/
       margin: 0;
       background-color: green;
       height: 100%;
     }
     .box{
       background-color: yellow;
-      width: 50%;
+      width: 100%;
       height:50%;
       padding:30px; /* all sides */
       padding:30px 20px; /* top bottom | left right */
@@ -24,16 +24,27 @@
       margin:20px 10px 5px 2px; /* top | bottom | left | right */
     }
     .inside-box{
-      background-color: blue;
-      width:50%;
-      height: 50%;
-      border:5px dashed red; /* border-width | border-style | border-color */
+      background-color: orange;
+      padding-left: 5%;
+      width: 20%;
+      height: 20%;
+      border:1px dashed red; /* border-width | border-style | border-color */
+      display: inline-block;
+    }
+    .test-box{
+        background-color: white;
+        padding-left: 5%;
+        width: 20%;
+        height: 20%;
+        border:1px dashed red;
+        display: inline-block;
     }
   </style>
 </head>
 <body>
     <div class="box">
-      <div class="inside-box"></div>
+      <div class="inside-box"><h4>BOX TEST 1</h4></div>
+      <div class="test-box"><h4>BOX TEST 2</h4></div>
     </div>
 </body>
 </html>
